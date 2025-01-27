@@ -24,7 +24,7 @@ class MusicPlaylistManagerApp < FXMainWindow
         end
 
 
-        customFont = FXFont.new(app, "Arial", 14) 
+        customFont = FXFont.new(app, "Arial", 14, FONTWEIGHT_BOLD) 
 
         
         verticalFrame = FXVerticalFrame.new(self, opts: LAYOUT_FILL_X | LAYOUT_FILL_Y | LAYOUT_CENTER_Y, padTop: 20, padBottom: 20)
@@ -36,7 +36,7 @@ class MusicPlaylistManagerApp < FXMainWindow
 
 
 
-        # | CREATE PLAYLISTS BUTTON |
+        # | GUMB: STVORI NOVE PLAYLISTE|
 
         playlistFeaturesButton = FXButton.new(buttonFrame, "Stvori Novu Playlistu", opts: BUTTON_NORMAL, width: 150, height: 50, padTop: 15, padBottom: 15, padLeft: 10, padRight: 10)
         playlistFeaturesButton.font = customFont
@@ -64,7 +64,7 @@ class MusicPlaylistManagerApp < FXMainWindow
             end
         end
     
-        # | MANAGE PLAYLISTS BUTTON |
+        # | GUMB: UPRAVLJAJ PLAYLISTAMA|
 
         playlistFeaturesButton = FXButton.new(buttonFrame, "Upravljaj playlistama", opts: BUTTON_NORMAL, width: 150, height: 50, padTop: 15, padBottom: 15, padLeft: 10, padRight: 10)
         playlistFeaturesButton.font = customFont
@@ -75,7 +75,7 @@ class MusicPlaylistManagerApp < FXMainWindow
         end
 
 
-        # | CREATE PLAYLISTS BUTTON |
+        # | GUMB: UPRAVLJAJ PJESMAMA|
 
         songFeaturesButton = FXButton.new(buttonFrame, "Upravljaj pjesmama", opts: BUTTON_NORMAL, width: 150, height: 50, padTop: 15, padBottom: 15, padLeft: 10, padRight: 10)
         songFeaturesButton.font = customFont

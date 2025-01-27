@@ -43,6 +43,6 @@ class Playlist
   def urediNaziv(noviNaziv)
     raise ArgumentError, "Novi naziv ne može biti nil ili prazan!" if noviNaziv.nil? || noviNaziv.empty?
     @naziv = noviNaziv
-    "Naziv playliste uspješno promijenjen."
+    puts "Naziv playliste uspješno promijenjen."
   end
 end

@@ -35,10 +35,9 @@ module PlaylistManager
 
     private
 
-    def spremiPlaylistu(playlist)
+    def spremiPlaylistu(playlist, old_name = nil)
         file_path = 'data/playlists.json'
 
-        # Read existing playlists from the file
         existingPlaylists = []
         if File.exist?(file_path) && !File.zero?(file_path)
             jsonData = File.read(file_path)
@@ -46,34 +45,31 @@ module PlaylistManager
         end
 
         begin
-            # Check if the playlist already exists
-            existing_playlist = existingPlaylists.find { |p| p['naziv'] == playlist.naziv }
+            existing_playlist = existingPlaylists.find { |p| p['naziv'] == (old_name || playlist.naziv) }
             if existing_playlist
-                # Update the existing playlist with the current songs
+                existing_playlist['naziv'] = playlist.naziv
                 existing_playlist['pjesme'] = playlist.pjesme.map do |pjesma|
                     {
-                        naziv: pjesma.naziv,
-                        izvodac: pjesma.izvodac,
-                        album: pjesma.album,
-                        trajanje: pjesma.trajanje
+                        'naziv' => pjesma.naziv,
+                        'izvodac' => pjesma.izvodac,
+                        'album' => pjesma.album,
+                        'trajanje' => pjesma.trajanje
                     }
                 end
             else
-                # Create a new playlist with an empty list of songs
                 playlistData = {
                     'naziv' => playlist.naziv,
-                    'pjesme' => [] # Empty list of songs
+                    'pjesme' => []
                 }
                 existingPlaylists << playlistData
             end
 
-            # Write back to the file
             jsonData = JSON.generate(existingPlaylists)
             File.write(file_path, jsonData)
-            puts "Playlista pod nazivom:  '#{playlist.naziv}'  je uspješno spremljena u datoteku."
+            puts "Playlista pod nazivom: '#{playlist.naziv}' je uspješno spremljena u datoteku."
 
         rescue StandardError => e
-            puts "Greška:  #{e.message}"
+            puts "Greška: #{e.message}"
             FXMessageBox.error(self, MBOX_OK, "Error", "Pojavila se greška prilikom spremanja playliste!")
         end
     end

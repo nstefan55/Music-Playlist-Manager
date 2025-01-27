@@ -1,29 +1,327 @@
 [
   {
-    "naziv": "Popis",
+    "naziv": "Playlist1",
     "pjesme": [
       {
-        "naziv": "kawasaki",
-        "izvodac": "lokki",
-        "album": "brza muzika",
-        "trajanje": 3.2
+        "naziv": "Song677",
+        "izvodac": "Artist43",
+        "album": "Album18",
+        "trajanje": 3.5
       },
-      { "naziv": "Kiss", "izvodac": "Baks", "album": "/", "trajanje": 5 },
       {
-        "naziv": "Plesi cijelu noc",
-        "izvodac": "lokki",
-        "album": "brza muzika",
-        "trajanje": 2.4
+        "naziv": "Song769",
+        "izvodac": "Artist6",
+        "album": "Album13",
+        "trajanje": 3.25
       },
-      { "naziv": "test", "izvodac": "test2", "album": "test3", "trajanje": 3.7 }
+      {
+        "naziv": "Song637",
+        "izvodac": "Artist36",
+        "album": "/",
+        "trajanje": 7.52
+      },
+      {
+        "naziv": "Song323",
+        "izvodac": "Artist32",
+        "album": "/",
+        "trajanje": 9.36
+      },
+      {
+        "naziv": "Song550",
+        "izvodac": "Artist35",
+        "album": "/",
+        "trajanje": 6.3
+      },
+      {
+        "naziv": "Song824",
+        "izvodac": "Artist22",
+        "album": "/",
+        "trajanje": 8.72
+      },
+      {
+        "naziv": "Song885",
+        "izvodac": "Artist26",
+        "album": "/",
+        "trajanje": 9.15
+      },
+      {
+        "naziv": "Song904",
+        "izvodac": "Artist48",
+        "album": "/",
+        "trajanje": 1.46
+      },
+      {
+        "naziv": "Song807",
+        "izvodac": "Artist50",
+        "album": "Album18",
+        "trajanje": 7.03
+      },
+      {
+        "naziv": "Song459",
+        "izvodac": "Artist40",
+        "album": "/",
+        "trajanje": 1.78
+      }
     ]
   },
   {
-    "naziv": "Popis 2",
+    "naziv": "Playlist2",
     "pjesme": [
-      { "naziv": "text", "izvodac": "sdsd", "album": "/", "trajanje": 3.3 }
+      {
+        "naziv": "Song237",
+        "izvodac": "Artist12",
+        "album": "Album20",
+        "trajanje": 9.69
+      },
+      {
+        "naziv": "Song554",
+        "izvodac": "Artist9",
+        "album": "/",
+        "trajanje": 1.14
+      },
+      {
+        "naziv": "Song156",
+        "izvodac": "Artist19",
+        "album": "Album19",
+        "trajanje": 6.49
+      },
+      {
+        "naziv": "Song829",
+        "izvodac": "Artist41",
+        "album": "/",
+        "trajanje": 2.88
+      },
+      {
+        "naziv": "Song390",
+        "izvodac": "Artist19",
+        "album": "Album10",
+        "trajanje": 5.66
+      },
+      {
+        "naziv": "Song160",
+        "izvodac": "Artist32",
+        "album": "/",
+        "trajanje": 5.78
+      },
+      {
+        "naziv": "Song457",
+        "izvodac": "Artist21",
+        "album": "/",
+        "trajanje": 7.23
+      },
+      {
+        "naziv": "Song136",
+        "izvodac": "Artist36",
+        "album": "Album10",
+        "trajanje": 3.68
+      },
+      {
+        "naziv": "Song746",
+        "izvodac": "Artist31",
+        "album": "Album13",
+        "trajanje": 1.79
+      },
+      {
+        "naziv": "Song695",
+        "izvodac": "Artist21",
+        "album": "Album8",
+        "trajanje": 1.88
+      }
     ]
   },
-  { "naziv": "Popis 3", "pjesme": [] },
-  { "naziv": "Test Playlist", "pjesme": [] }
+  {
+    "naziv": "Playlist3",
+    "pjesme": [
+      {
+        "naziv": "Song110",
+        "izvodac": "Artist44",
+        "album": "/",
+        "trajanje": 4.15
+      },
+      {
+        "naziv": "Song192",
+        "izvodac": "Artist42",
+        "album": "Album6",
+        "trajanje": 8.95
+      },
+      {
+        "naziv": "Song871",
+        "izvodac": "Artist2",
+        "album": "Album10",
+        "trajanje": 2.77
+      },
+      {
+        "naziv": "Song478",
+        "izvodac": "Artist30",
+        "album": "Album7",
+        "trajanje": 6.94
+      },
+      {
+        "naziv": "Song414",
+        "izvodac": "Artist40",
+        "album": "/",
+        "trajanje": 6.43
+      },
+      {
+        "naziv": "Song536",
+        "izvodac": "Artist46",
+        "album": "/",
+        "trajanje": 7.35
+      },
+      {
+        "naziv": "Song856",
+        "izvodac": "Artist44",
+        "album": "/",
+        "trajanje": 8.89
+      },
+      {
+        "naziv": "Song444",
+        "izvodac": "Artist4",
+        "album": "/",
+        "trajanje": 4.27
+      },
+      {
+        "naziv": "Song209",
+        "izvodac": "Artist24",
+        "album": "/",
+        "trajanje": 7.73
+      },
+      {
+        "naziv": "Song430",
+        "izvodac": "Artist7",
+        "album": "Album19",
+        "trajanje": 4.76
+      }
+    ]
+  },
+  {
+    "naziv": "Playlist4",
+    "pjesme": [
+      {
+        "naziv": "Song523",
+        "izvodac": "Artist48",
+        "album": "Album7",
+        "trajanje": 2.83
+      },
+      {
+        "naziv": "Song227",
+        "izvodac": "Artist21",
+        "album": "/",
+        "trajanje": 4.44
+      },
+      {
+        "naziv": "Song841",
+        "izvodac": "Artist10",
+        "album": "Album2",
+        "trajanje": 7.84
+      },
+      {
+        "naziv": "Song514",
+        "izvodac": "Artist47",
+        "album": "/",
+        "trajanje": 3.74
+      },
+      {
+        "naziv": "Song348",
+        "izvodac": "Artist45",
+        "album": "/",
+        "trajanje": 6.42
+      },
+      {
+        "naziv": "Song120",
+        "izvodac": "Artist4",
+        "album": "/",
+        "trajanje": 9.63
+      },
+      {
+        "naziv": "Song690",
+        "izvodac": "Artist22",
+        "album": "/",
+        "trajanje": 7.82
+      },
+      {
+        "naziv": "Song540",
+        "izvodac": "Artist2",
+        "album": "/",
+        "trajanje": 5.36
+      },
+      {
+        "naziv": "Song135",
+        "izvodac": "Artist15",
+        "album": "Album16",
+        "trajanje": 5.78
+      },
+      {
+        "naziv": "Song930",
+        "izvodac": "Artist21",
+        "album": "Album19",
+        "trajanje": 3.87
+      }
+    ]
+  },
+  {
+    "naziv": "Playlist5",
+    "pjesme": [
+      {
+        "naziv": "Song517",
+        "izvodac": "Artist33",
+        "album": "/",
+        "trajanje": 4.79
+      },
+      {
+        "naziv": "Song260",
+        "izvodac": "Artist30",
+        "album": "/",
+        "trajanje": 2.12
+      },
+      {
+        "naziv": "Song596",
+        "izvodac": "Artist46",
+        "album": "/",
+        "trajanje": 1.93
+      },
+      {
+        "naziv": "Song682",
+        "izvodac": "Artist47",
+        "album": "/",
+        "trajanje": 1.2
+      },
+      {
+        "naziv": "Song225",
+        "izvodac": "Artist19",
+        "album": "/",
+        "trajanje": 9.36
+      },
+      {
+        "naziv": "Song336",
+        "izvodac": "Artist13",
+        "album": "Album10",
+        "trajanje": 4.47
+      },
+      {
+        "naziv": "Song718",
+        "izvodac": "Artist26",
+        "album": "/",
+        "trajanje": 6.32
+      },
+      {
+        "naziv": "Song425",
+        "izvodac": "Artist46",
+        "album": "Album11",
+        "trajanje": 2.52
+      },
+      {
+        "naziv": "Song308",
+        "izvodac": "Artist40",
+        "album": "Album11",
+        "trajanje": 9.78
+      },
+      {
+        "naziv": "Song656",
+        "izvodac": "Artist20",
+        "album": "/",
+        "trajanje": 9.02
+      }
+    ]
+  }
 ]
