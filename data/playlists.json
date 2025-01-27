@@ -1,0 +1,29 @@
+[
+  {
+    "naziv": "Popis",
+    "pjesme": [
+      {
+        "naziv": "kawasaki",
+        "izvodac": "lokki",
+        "album": "brza muzika",
+        "trajanje": 3.2
+      },
+      { "naziv": "Kiss", "izvodac": "Baks", "album": "/", "trajanje": 5 },
+      {
+        "naziv": "Plesi cijelu noc",
+        "izvodac": "lokki",
+        "album": "brza muzika",
+        "trajanje": 2.4
+      },
+      { "naziv": "test", "izvodac": "test2", "album": "test3", "trajanje": 3.7 }
+    ]
+  },
+  {
+    "naziv": "Popis 2",
+    "pjesme": [
+      { "naziv": "text", "izvodac": "sdsd", "album": "/", "trajanje": 3.3 }
+    ]
+  },
+  { "naziv": "Popis 3", "pjesme": [] },
+  { "naziv": "Test Playlist", "pjesme": [] }
+]
