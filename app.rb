@@ -1,13 +1,13 @@
 require 'fox16'
 include Fox
 
-require_relative 'playlistView'
-require_relative 'songView'
+require_relative 'views/playlistView'
+require_relative 'views/songView'
 
-require_relative "../app/models/playlist"
-require_relative "../app/models/playlistManager"
-require_relative "../app/models/song"
-require_relative "../app/utils/formatLength"
+require_relative "app/models/playlist"
+require_relative "app/models/playlistManager"
+require_relative "app/models/song"
+require_relative "app/utils/formatLength"
 
 
 class MusicPlaylistManagerApp < FXMainWindow
