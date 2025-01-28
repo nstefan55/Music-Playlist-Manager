@@ -62,15 +62,16 @@ class PlaylistView < FXMainWindow
                         trajanjeLabel = FXLabel.new(detailsFrame, "Ukupno trajanje: #{formatiranoTrajanje}", opts: LAYOUT_LEFT)
                         trajanjeLabel.font = boldFont12
 
+                        FXHorizontalSeparator.new(detailsFrame, opts: LAYOUT_FILL_X | SEPARATOR_GROOVE)
+
                         songListLabel = FXLabel.new(detailsFrame, "Popis pjesama:", opts: LAYOUT_LEFT)
                         songListLabel.font = boldFont12
 
                         playlist.pjesme.each do |song|
-                            songDetails = "Naziv: #{song.naziv}  |  Album: #{song.album}  |  Trajanje: #{song.trajanje} min"
+                            songDetails = "Naziv: #{song.naziv}  |  Album: #{song.album}  |  Trajanje: #{formatTrajanje(song.trajanje)}"
                             songLabel = FXLabel.new(detailsFrame, songDetails, opts: LAYOUT_LEFT)
                             songLabel.font = normalFont
                             
-                            # Add a separator or padding for spacing
                             FXHorizontalSeparator.new(detailsFrame, opts: LAYOUT_FILL_X | SEPARATOR_GROOVE)
                         end
 
