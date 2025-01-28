@@ -1,6 +1,6 @@
 private
 
-def odredi_oblik_sati(sati)
+def odrediOblikSati(sati)
   if (11..19).include?(sati % 100)
     "sati"
   else
@@ -16,7 +16,7 @@ def odredi_oblik_sati(sati)
   end
 end
 
-def odredi_oblik_minute(minute)
+def odrediOblikMinute(minute)
   if (11..19).include?(minute % 100)
     "minuta"
   else
@@ -39,9 +39,9 @@ def formatTrajanje(ukMinute)
   minute = (ukMinute % 60).round
 
   if sati >= 1
-    "#{sati} #{odredi_oblik_sati(sati)} i #{minute} #{odredi_oblik_minute(minute)}"
+    "#{sati} #{odrediOblikSati(sati)} i #{minute} #{odrediOblikMinute(minute)}"
   else
-    "#{minute} #{odredi_oblik_minute(minute)}"
+    "#{minute} #{odrediOblikMinute(minute)}"
   end
 end
 

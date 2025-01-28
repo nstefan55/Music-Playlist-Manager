@@ -44,37 +44,49 @@ class PlaylistView < FXMainWindow
                 begin
                     playlist = existing_playlists.find { |p| p.naziv == nazivPlayliste }
                     if playlist
-                        
-                        detailsWindow = FXMainWindow.new(app, "Detalji Playliste:" + " " + "#{nazivPlayliste}".upcase!, width: 400, height: 200)
+                        detailsWindow = FXMainWindow.new(app, "Detalji Playliste: #{nazivPlayliste.upcase}", width: 400, height: 400)
                         detailsFrame = FXVerticalFrame.new(detailsWindow, opts: LAYOUT_FILL_X | LAYOUT_FILL_Y)
 
+                        boldFont14 = FXFont.new(app, "Arial", 14, FONTWEIGHT_BOLD)
                         boldFont12 = FXFont.new(app, "Arial", 12, FONTWEIGHT_BOLD)
                         normalFont = FXFont.new(app, "Arial", 12)
 
+                        nazivLabel = FXLabel.new(detailsFrame, "Naziv Playliste: #{playlist.naziv}", opts: LAYOUT_LEFT)
+                        nazivLabel.font = boldFont14
 
-                        brojPjesamaLabel = FXLabel.new(detailsFrame, "Broj pjesama: ", opts: LAYOUT_LEFT)
+                        brojPjesamaLabel = FXLabel.new(detailsFrame, "Broj pjesama: #{playlist.pjesme.size}", opts: LAYOUT_LEFT)
                         brojPjesamaLabel.font = boldFont12
-                        brojPjesamaValue = FXLabel.new(detailsFrame, playlist.pjesme.size.to_s, opts: LAYOUT_LEFT)
-                        brojPjesamaValue.font = normalFont
 
                         ukupnoTrajanje = playlist.pjesme.sum(&:trajanje)
                         formatiranoTrajanje = formatTrajanje(ukupnoTrajanje)
-                        trajanjeLabel = FXLabel.new(detailsFrame, "Ukupno trajanje: ", opts: LAYOUT_LEFT)
+                        trajanjeLabel = FXLabel.new(detailsFrame, "Ukupno trajanje: #{formatiranoTrajanje}", opts: LAYOUT_LEFT)
                         trajanjeLabel.font = boldFont12
-                        trajanjeValue = FXLabel.new(detailsFrame, formatiranoTrajanje, opts: LAYOUT_LEFT)
-                        trajanjeValue.font = normalFont
+
+                        songListLabel = FXLabel.new(detailsFrame, "Popis pjesama:", opts: LAYOUT_LEFT)
+                        songListLabel.font = boldFont12
+
+                        playlist.pjesme.each do |song|
+                            songDetails = "Naziv: #{song.naziv}  |  Album: #{song.album}  |  Trajanje: #{song.trajanje} min"
+                            songLabel = FXLabel.new(detailsFrame, songDetails, opts: LAYOUT_LEFT)
+                            songLabel.font = normalFont
+                            
+                            # Add a separator or padding for spacing
+                            FXHorizontalSeparator.new(detailsFrame, opts: LAYOUT_FILL_X | SEPARATOR_GROOVE)
+                        end
 
                         detailsWindow.create
                         detailsWindow.show(PLACEMENT_SCREEN)
                     else
-                        FXMessageBox.error(self, MBOX_OK, "Error", "Playlista nije pronađena!")
+                        FXMessageBox.error(self, MBOX_OK, "Greška", "Playlista nije pronađena!")
                     end
                 rescue ArgumentError => e
-                    FXMessageBox.error(self, MBOX_OK, "Error", e.message)
+                    FXMessageBox.error(self, MBOX_OK, "Greška", e.message)
                 end
             end
         end
     end
+
+
 
     # | UREDI NAZIV PLAYLISTE |
     editPaylistNameButton = FXButton.new(verticalFrame, "Uredite naziv playliste", opts: BUTTON_NORMAL, width: 150, height: 50, padTop: 15, padBottom: 15, padLeft: 10, padRight: 10)
@@ -204,7 +216,7 @@ class PlaylistView < FXMainWindow
                     jsonData = JSON.generate(existing_playlists.map { |playlist| { 'naziv' => playlist.naziv, 'pjesme' => playlist.pjesme.map { |song| { 'naziv' => song.naziv, 'izvodac' => song.izvodac, 'album' => song.album, 'trajanje' => song.trajanje } } } })
                     File.write(file_path, jsonData)
 
-                    FXMessageBox.information(self, MBOX_OK, "Uspjeh", "Playlista #{nazivPlayliste} uspješno obirsana!")
+                    FXMessageBox.information(self, MBOX_OK, "Uspjeh", "Playlista pod nazivom '#{nazivPlayliste}' je uspješno obrisana!")
                 rescue ArgumentError => e
                     FXMessageBox.error(self, MBOX_OK, "Greška", e.message)
                 end

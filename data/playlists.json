@@ -3,44 +3,44 @@
     "naziv": "Playlist1",
     "pjesme": [
       {
-        "naziv": "Song677",
-        "izvodac": "Artist43",
-        "album": "Album18",
-        "trajanje": 3.5
+        "naziv": "Pazuzu",
+        "izvodac": "Luzeri",
+        "album": "Ljubav nije za luzere",
+        "trajanje": 3.52
       },
       {
-        "naziv": "Song769",
-        "izvodac": "Artist6",
-        "album": "Album13",
-        "trajanje": 3.25
+        "naziv": "Kawasaki",
+        "izvodac": "Lokki",
+        "album": "Brza Muzika",
+        "trajanje": 2.42
       },
       {
-        "naziv": "Song637",
-        "izvodac": "Artist36",
+        "naziv": "Play Hard",
+        "izvodac": "David Guetta",
         "album": "/",
-        "trajanje": 7.52
+        "trajanje": 3.28
       },
       {
-        "naziv": "Song323",
-        "izvodac": "Artist32",
+        "naziv": "Kiss",
+        "izvodac": "Baks",
         "album": "/",
-        "trajanje": 9.36
+        "trajanje": 2.24
       },
       {
-        "naziv": "Song550",
-        "izvodac": "Artist35",
+        "naziv": "Kemija",
+        "izvodac": "Magazin",
         "album": "/",
-        "trajanje": 6.3
+        "trajanje": 2
       },
       {
-        "naziv": "Song824",
-        "izvodac": "Artist22",
+        "naziv": "Need To Know",
+        "izvodac": "Doja Cat",
         "album": "/",
-        "trajanje": 8.72
+        "trajanje": 3
       },
       {
-        "naziv": "Song885",
-        "izvodac": "Artist26",
+        "naziv": "Black and Yellow",
+        "izvodac": "Wiz Khalifa",
         "album": "/",
         "trajanje": 9.15
       },
@@ -323,6 +323,5 @@
         "trajanje": 9.02
       }
     ]
-  },
-  { "naziv": "Moja Nova Playlista", "pjesme": [] }
+  }
 ]
