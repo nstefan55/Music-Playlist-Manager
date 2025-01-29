@@ -68,7 +68,7 @@ class PlaylistView < FXMainWindow
                         songListLabel.font = boldFont12
 
                         playlist.pjesme.each do |song|
-                            songDetails = "Naziv: #{song.naziv}  |  Album: #{song.album}  |  Trajanje: #{formatTrajanje(song.trajanje)}"
+                            songDetails = "#{song.naziv}  |  Album: #{song.album}  |  Trajanje: #{formatTrajanje(song.trajanje)}"
                             songLabel = FXLabel.new(detailsFrame, songDetails, opts: LAYOUT_LEFT)
                             songLabel.font = normalFont
                             

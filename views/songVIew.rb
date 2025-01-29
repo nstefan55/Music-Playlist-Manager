@@ -201,7 +201,7 @@ class SongView < FXMainWindow
                 ordrNum = 1
                 filteredSongs = existing_playlists.flat_map do |playlist|
                     playlist.pjesme.select { |song| song.izvodac == artistName }.map do |song|
-                        displayFilteredSongs = "##{ordrNum} |  Playlist: #{playlist.naziv}  |  Naziv: #{song.naziv}  |  Album: #{song.album}  |  Trajanje: #{song.trajanje} min"
+                        displayFilteredSongs = "##{ordrNum} |  Playlist: #{playlist.naziv}  |  Naziv: #{song.naziv}  |  Album: #{song.album}  |  Trajanje: #{formatTrajanje(song.trajanje)}"
                         ordrNum += 1
                         displayFilteredSongs
                     end
@@ -253,7 +253,7 @@ class SongView < FXMainWindow
                 ordrNum = 1
                 filteredSongs = existing_playlists.flat_map do |playlist|
                     playlist.pjesme.select { |song| song.album == albumName }.map do |song|
-                        displayFilteredSongs = "##{ordrNum} |  Playlist: #{playlist.naziv}  |  Naziv: #{song.naziv}  |  Izvođač: #{song.izvodac}  |  Trajanje: #{song.trajanje} min"
+                        displayFilteredSongs = "##{ordrNum} |  Playlist: #{playlist.naziv}  |  Naziv: #{song.naziv}  |  Izvođač: #{song.izvodac}  |  Trajanje: #{formatTrajanje(song.trajanje)}"
                         ordrNum += 1
                         displayFilteredSongs
                     end
@@ -306,7 +306,7 @@ class SongView < FXMainWindow
                 ordrNum = 1
                 filteredSongs = existing_playlists.flat_map do |playlist|
                     playlist.pjesme.select { |song| song.trajanje.between?(min_duration, max_duration) }.map do |song|
-                        displayFilteredSongs = "##{ordrNum} |  Playlist: #{playlist.naziv}  |  Naziv: #{song.naziv}  |  Izvođač: #{song.izvodac}  |  Album: #{song.album}  |  Trajanje: #{song.trajanje} min"
+                        displayFilteredSongs = "##{ordrNum} |  Playlist: #{playlist.naziv}  |  Naziv: #{song.naziv}  |  Izvođač: #{song.izvodac}  |  Album: #{song.album}  |  Trajanje: #{formatTrajanje(song.trajanje)}"
                         ordrNum += 1
                         displayFilteredSongs
                     end
