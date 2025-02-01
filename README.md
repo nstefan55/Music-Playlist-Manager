@@ -18,7 +18,7 @@ Music Playlist Manager is a Ruby application with a graphical user interface (GU
    git clone https://github.com/nstefan55/Music-Playlist-Manager.git
    cd Music-Playlist-Manager
 
-##Project Structure
+## Project Structure
 - **app.rb**: The main application file that initializes the GUI and handles user interactions.
 - **models/**: Contains the core classes for managing playlists and songs.
    
