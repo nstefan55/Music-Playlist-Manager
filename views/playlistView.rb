@@ -57,7 +57,7 @@ class PlaylistView < FXMainWindow
                         brojPjesamaLabel = FXLabel.new(detailsFrame, "Broj pjesama: #{playlist.pjesme.size}", opts: LAYOUT_LEFT)
                         brojPjesamaLabel.font = boldFont12
 
-                        ukupnoTrajanje = playlist.pjesme.sum(&:trajanje)
+                        ukupnoTrajanje = playlist.pjesme.sum { |song| song.trajanje.to_i}
                         formatiranoTrajanje = formatTrajanje(ukupnoTrajanje)
                         trajanjeLabel = FXLabel.new(detailsFrame, "Ukupno trajanje: #{formatiranoTrajanje}", opts: LAYOUT_LEFT)
                         trajanjeLabel.font = boldFont12

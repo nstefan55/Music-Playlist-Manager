@@ -1,1 +1,203 @@
-[{"naziv":"2010 Hits","pjesme":[{"naziv":"Only Girl (In The World)","izvodac":"Rihanna","album":"Loud","trajanje":3.56},{"naziv":"What's My Name?","izvodac":"Rihanna ft. Drake","album":"Loud","trajanje":4.23},{"naziv":"S&M","izvodac":"Rihanna","album":"Loud","trajanje":4.03},{"naziv":"Teenage Dream","izvodac":"Katy Perry","album":"Teenage Dream","trajanje":3.47},{"naziv":"California Gurls","izvodac":"Katy Perry ft. Snoop Dogg","album":"Teenage Dream","trajanje":3.56},{"naziv":"Just the Way You Are","izvodac":"Bruno Mars","album":"Doo-Wops & Hooligans","trajanje":3.4},{"naziv":"Grenade","izvodac":"Bruno Mars","album":"Doo-Wops & Hooligans","trajanje":3.42},{"naziv":"Dynamite","izvodac":"Taio Cruz","album":"Rokstarr","trajanje":3.23},{"naziv":"Club Can't Handle Me","izvodac":"Flo Rida ft. David Guetta","album":"Only One Flo (Part 1)","trajanje":4.0},{"naziv":"Airplanes","izvodac":"B.o.B ft. Hayley Williams","album":"B.o.B Presents: The Adventures of Bobby Ray","trajanje":3.57}]},{"naziv":"Rock Essentials","pjesme":[{"naziv":"Smells Like Teen Spirit","izvodac":"Nirvana","album":"Nevermind","trajanje":5.01},{"naziv":"Come As You Are","izvodac":"Nirvana","album":"Nevermind","trajanje":3.39},{"naziv":"Lithium","izvodac":"Nirvana","album":"Nevermind","trajanje":4.17},{"naziv":"Sweet Child o' Mine","izvodac":"Guns N' Roses","album":"Appetite for Destruction","trajanje":5.55},{"naziv":"Welcome to the Jungle","izvodac":"Guns N' Roses","album":"Appetite for Destruction","trajanje":4.32},{"naziv":"Bohemian Rhapsody","izvodac":"Queen","album":"A Night at the Opera","trajanje":5.55},{"naziv":"We Will Rock You","izvodac":"Queen","album":"News of the World","trajanje":2.02},{"naziv":"Hotel California","izvodac":"Eagles","album":"Hotel California","trajanje":6.31},{"naziv":"Another Brick in the Wall, Pt. 2","izvodac":"Pink Floyd","album":"The Wall","trajanje":3.59},{"naziv":"Paranoid","izvodac":"Black Sabbath","album":"Paranoid","trajanje":2.48}]},{"naziv":"Rap and Hip Hop Mix","pjesme":[{"naziv":"Lose Yourself","izvodac":"Eminem","album":"8 Mile Soundtrack","trajanje":5.26},{"naziv":"Without Me","izvodac":"Eminem","album":"The Eminem Show","trajanje":4.5},{"naziv":"Till I Collapse","izvodac":"Eminem ft. Nate Dogg","album":"The Eminem Show","trajanje":4.57},{"naziv":"Stronger","izvodac":"Kanye West","album":"Graduation","trajanje":5.12},{"naziv":"Power","izvodac":"Kanye West","album":"My Beautiful Dark Twisted Fantasy","trajanje":4.52},{"naziv":"Runaway","izvodac":"Kanye West ft. Pusha T","album":"My Beautiful Dark Twisted Fantasy","trajanje":9.08},{"naziv":"Sicko Mode","izvodac":"Travis Scott","album":"Astroworld","trajanje":5.12},{"naziv":"God's Plan","izvodac":"Drake","album":"Scorpion","trajanje":3.18},{"naziv":"HUMBLE.","izvodac":"Kendrick Lamar","album":"DAMN.","trajanje":2.57},{"naziv":"DNA.","izvodac":"Kendrick Lamar","album":"DAMN.","trajanje":3.05}]}]
+[
+  {
+    "naziv": "2010 Hits",
+    "pjesme": [
+      {
+        "naziv": "Only Girl (In The World)",
+        "izvodac": "Rihanna",
+        "album": "Loud",
+        "trajanje": 3.56
+      },
+      {
+        "naziv": "What's My Name?",
+        "izvodac": "Rihanna ft. Drake",
+        "album": "Loud",
+        "trajanje": 4.23
+      },
+      {
+        "naziv": "S&M",
+        "izvodac": "Rihanna",
+        "album": "Loud",
+        "trajanje": 4.03
+      },
+      {
+        "naziv": "Teenage Dream",
+        "izvodac": "Katy Perry",
+        "album": "Teenage Dream",
+        "trajanje": 3.47
+      },
+      {
+        "naziv": "California Gurls",
+        "izvodac": "Katy Perry ft. Snoop Dogg",
+        "album": "Teenage Dream",
+        "trajanje": 3.56
+      },
+      {
+        "naziv": "Just the Way You Are",
+        "izvodac": "Bruno Mars",
+        "album": "Doo-Wops & Hooligans",
+        "trajanje": 3.4
+      },
+      {
+        "naziv": "Grenade",
+        "izvodac": "Bruno Mars",
+        "album": "Doo-Wops & Hooligans",
+        "trajanje": 3.42
+      },
+      {
+        "naziv": "Dynamite",
+        "izvodac": "Taio Cruz",
+        "album": "Rokstarr",
+        "trajanje": 3.23
+      },
+      {
+        "naziv": "Club Can't Handle Me",
+        "izvodac": "Flo Rida ft. David Guetta",
+        "album": "Only One Flo (Part 1)",
+        "trajanje": 4.0
+      },
+      {
+        "naziv": "Airplanes",
+        "izvodac": "B.o.B ft. Hayley Williams",
+        "album": "B.o.B Presents: The Adventures of Bobby Ray",
+        "trajanje": 3.57
+      }
+    ]
+  },
+  {
+    "naziv": "Rock Essentials",
+    "pjesme": [
+      {
+        "naziv": "Smells Like Teen Spirit",
+        "izvodac": "Nirvana",
+        "album": "Nevermind",
+        "trajanje": 5.01
+      },
+      {
+        "naziv": "Come As You Are",
+        "izvodac": "Nirvana",
+        "album": "Nevermind",
+        "trajanje": 3.39
+      },
+      {
+        "naziv": "Lithium",
+        "izvodac": "Nirvana",
+        "album": "Nevermind",
+        "trajanje": 4.17
+      },
+      {
+        "naziv": "Sweet Child o' Mine",
+        "izvodac": "Guns N' Roses",
+        "album": "Appetite for Destruction",
+        "trajanje": 5.55
+      },
+      {
+        "naziv": "Welcome to the Jungle",
+        "izvodac": "Guns N' Roses",
+        "album": "Appetite for Destruction",
+        "trajanje": 4.32
+      },
+      {
+        "naziv": "Bohemian Rhapsody",
+        "izvodac": "Queen",
+        "album": "A Night at the Opera",
+        "trajanje": 5.55
+      },
+      {
+        "naziv": "We Will Rock You",
+        "izvodac": "Queen",
+        "album": "News of the World",
+        "trajanje": 2.02
+      },
+      {
+        "naziv": "Hotel California",
+        "izvodac": "Eagles",
+        "album": "Hotel California",
+        "trajanje": 6.31
+      },
+      {
+        "naziv": "Another Brick in the Wall, Pt. 2",
+        "izvodac": "Pink Floyd",
+        "album": "The Wall",
+        "trajanje": 3.59
+      },
+      {
+        "naziv": "Paranoid",
+        "izvodac": "Black Sabbath",
+        "album": "Paranoid",
+        "trajanje": 2.48
+      }
+    ]
+  },
+  {
+    "naziv": "Rap",
+    "pjesme": [
+      {
+        "naziv": "Lose Yourself",
+        "izvodac": "Eminem",
+        "album": "8 Mile Soundtrack",
+        "trajanje": 5.26
+      },
+      {
+        "naziv": "Without Me",
+        "izvodac": "Eminem",
+        "album": "The Eminem Show",
+        "trajanje": 4.5
+      },
+      {
+        "naziv": "Till I Collapse",
+        "izvodac": "Eminem ft. Nate Dogg",
+        "album": "The Eminem Show",
+        "trajanje": 4.57
+      },
+      {
+        "naziv": "Stronger",
+        "izvodac": "Kanye West",
+        "album": "Graduation",
+        "trajanje": 5.12
+      },
+      {
+        "naziv": "Power",
+        "izvodac": "Kanye West",
+        "album": "My Beautiful Dark Twisted Fantasy",
+        "trajanje": 4.52
+      },
+      {
+        "naziv": "Runaway",
+        "izvodac": "Kanye West ft. Pusha T",
+        "album": "My Beautiful Dark Twisted Fantasy",
+        "trajanje": 9.08
+      },
+      {
+        "naziv": "Sicko Mode",
+        "izvodac": "Travis Scott",
+        "album": "Astroworld",
+        "trajanje": 5.12
+      },
+      {
+        "naziv": "God's Plan",
+        "izvodac": "Drake",
+        "album": "Scorpion",
+        "trajanje": 3.18
+      },
+      {
+        "naziv": "HUMBLE.",
+        "izvodac": "Kendrick Lamar",
+        "album": "DAMN.",
+        "trajanje": 2.57
+      },
+      {
+        "naziv": "DNA.",
+        "izvodac": "Kendrick Lamar",
+        "album": "DAMN.",
+        "trajanje": 3.05
+      }
+    ]
+  },
+  {
+    "naziv": "Testna Playlista",
+    "pjesme": [
+      { "naziv": "Forza", "izvodac": "Grse", "album": "/", "trajanje": 3.3 }
+    ]
+  }
+]

@@ -62,7 +62,7 @@ class SongView < FXMainWindow
 
             albumCheckbox = FXCheckButton.new(albumFrame, "DA")
             singleCheckbox = FXCheckButton.new(albumFrame, "Ne")
-            albumCheckbox.checkState = true # Default to album
+            albumCheckbox.checkState = true
 
             albumCheckbox.connect(SEL_COMMAND) do
                 singleCheckbox.checkState = false if albumCheckbox.checked?
@@ -77,6 +77,7 @@ class SongView < FXMainWindow
             FXButton.new(buttonFrame, "Cancel", nil, albumDialog, FXDialogBox::ID_CANCEL, FRAME_RAISED | FRAME_THICK | LAYOUT_RIGHT)
 
             album = "/"
+            
             if albumDialog.execute != 0
                 if albumCheckbox.checked?
                     albumNameDialog = FXInputDialog.new(self, "Dodaj pjesme u playlistu", "Unesite naziv Albuma:")
@@ -90,7 +91,7 @@ class SongView < FXMainWindow
             trajanje_input = lengthDialog.text.strip.to_f
 
             begin
-                trajanje = validDurationFormat(trajanje_input)
+                trajanje = trajanje_input
             rescue ArgumentError => e
                 FXMessageBox.error(self, MBOX_OK, "Greška", e.message)
                 next

@@ -79,6 +79,4 @@ def validDurationFormat(input)
     minute += 1
     sekunde -= 60
   end
-
-  "#{minute}:#{sekunde.to_s.rjust(2, '0')}"
 end
